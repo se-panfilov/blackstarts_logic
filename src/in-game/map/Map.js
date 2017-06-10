@@ -1,7 +1,5 @@
-const Map = {
+export default Map = {
 	init () {
 
 	}
 }
-
-export default Map
