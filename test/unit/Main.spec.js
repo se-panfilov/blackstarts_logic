@@ -2,7 +2,7 @@ const chai = require('chai')
 const expect = chai.expect
 // const sinon = require('sinon')
 
-import Main from '../../src/main.js'
+import Main from '../../src/Main.js'
 
 describe('Main.', () => {
 
