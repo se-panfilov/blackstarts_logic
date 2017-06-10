@@ -1,7 +1,5 @@
 require('./check-versions')()
-const factor = require('factor-bundle')
 const fs = require('fs')
-const concat = require('concat-stream')
 
 const SRC = './src'
 const DIST = './dist'
