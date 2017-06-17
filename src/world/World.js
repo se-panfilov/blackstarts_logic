@@ -1,4 +1,4 @@
-export default  World = {
+export default World = {
 	init () {
 
 	}
