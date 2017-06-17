@@ -1,4 +1,4 @@
-export default  Space = {
+export default {
 	init () {
 
 	}
