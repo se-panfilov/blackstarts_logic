@@ -1,11 +1,11 @@
-import WeaponKind from 'src/constants/weapon/WeaponKind.json'
-import WeaponType from 'src/constants/weapon/WeaponType.json'
-import WeaponFireSpeed from 'src/constants/weapon/WeaponFireSpeed.json'
-import WeaponFireCoolDown from 'src/constants/weapon/WeaponFireCoolDown.json'
-import WeaponFireRange from 'src/constants/weapon/WeaponFireRange.json'
-import WeaponFireAccuracy from 'src/constants/weapon/WeaponFireAccuracy.json'
-import AmmoUsage from 'src/constants/AmmoUsage.json'
-import SubSystem from 'src/constants/SubSystem.json'
+import WeaponKind from '../../../constants/weapon/WeaponKind.json'
+import WeaponType from '../../../constants/weapon/WeaponType.json'
+import WeaponFireSpeed from '../../../constants/weapon/WeaponFireSpeed.json'
+import WeaponFireCoolDown from '../../../constants/weapon/WeaponFireCoolDown.json'
+import WeaponFireRange from '../../../constants/weapon/WeaponFireRange.json'
+import WeaponFireAccuracy from '../../../constants/weapon/WeaponFireAccuracy.json'
+import AmmoUsage from '../../../constants/AmmoUsage.json'
+import SubSystem from '../../../constants/SubSystem.json'
 
 export default {
 	name: 'RailGun',

@@ -1,8 +1,8 @@
-import MinorShipType from 'src/constants/ship/minor/MinorShipType.json'
-import MinorShipSize from 'src/constants/ship/minor/MinorShipSize.json'
-import MinorShipMobility from 'src/constants/ship/minor/MinorShipMobility.json'
-import MinorShipFuelLodout from 'src/constants/ship/minor/MinorShipFuelLodout.json'
-import MinorShipAmmoLodout from 'src/constants/ship/minor/MinorShipAmmoLodout.json'
+import MinorShipType from '../../../constants/ship/minor/MinorShipType.json'
+import MinorShipSize from '../../../constants/ship/minor/MinorShipSize.json'
+import MinorShipMobility from '../../../constants/ship/minor/MinorShipMobility.json'
+import MinorShipFuelLodout from '../../../constants/ship/minor/MinorShipFuelLodout.json'
+import MinorShipAmmoLodout from '../../../constants/ship/minor/MinorShipAmmoLodout.json'
 
 export default {
 	name: MinorShipType.FIGHTER,
