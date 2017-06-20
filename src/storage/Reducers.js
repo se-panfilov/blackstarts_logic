@@ -1,5 +1,5 @@
 import {combineReducers} from 'redux-immutablejs'
-import MapReducers from './modules/MapReducers.js'
+import MapReducers from './reducers/MapReducers.js'
 
 export default combineReducers({
 	MapReducers

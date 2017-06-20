@@ -1,5 +1,5 @@
 import Immutable from 'immutable'
-import Reducers from './storage/reducers/MainReducers.js'
+import Reducers from './Reducers.js'
 //import DevTools from 'utils/devtools'
 import Redux from 'redux'
 
@@ -15,9 +15,10 @@ export default {
 			// DevTools.instrument()
 		)
 
-		const storage = Redux.createStore(Reducers, initialData, enhancer)
+		return Redux.createStore(Reducers, initialData, enhancer)
+	},
+	setStorage (storage) {
 		this.storage = storage
-
-		return storage
 	}
+
 }
