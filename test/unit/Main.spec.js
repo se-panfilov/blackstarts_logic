@@ -10,9 +10,9 @@ describe('Main.', () => {
 	describe('Main fn.', () => {
 
 		it('Main.', () => {
-			console.log('Main')
-			console.log(Main.init())
-			console.log('222222')
+			// console.log('Main')
+			Main.init()
+			// console.log('222222')
 			expect(1).to.be.a('number')
 			// main.main()
 		})

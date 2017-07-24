@@ -9,7 +9,7 @@ export default {
 	subsystemType: SubSystem.ENGINE,
 	kind: EngineKind.IMPULSE,
 	type: EngineType.MAIN,
-	speed: EngineSpeed.MAIN,
+	speed: EngineSpeed.NORMAL,
 
 
 	//requirements (space, energy, manpower, intel)

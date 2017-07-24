@@ -4,32 +4,39 @@ import StorageConstants from '../constants/StorageConstants.js'
 
 // CommonActions = Immutable.Map({
 // export default Map = (state = new Immutable.Map(), action) => {
+
+const ACTIONS = {
+	INIT (state, action) {
+	// [StorageConstants.INIT] (state, action) {
+		console.log('init!!!')
+		return state
+	},
+	[StorageConstants.SET_MAP_SIZE] (state, action) {
+		console.log('SET_MAP_SIZE!!!')
+		return state
+	}
+}
+
+const MESSAGE = {
+	UNKNOWN_ACTION_TYPE: 'UNKNOWN_ACTION_TYPE'
+}
+
+function processAction (state, action) {
+	// if (!ACTIONS || !action.type || !ACTIONS[action.type]) throw new Error(MESSAGE.UNKNOWN_ACTION_TYPE)
+	if (!ACTIONS || !action.type || !ACTIONS[action.type]) return state
+	console.log('processAction')
+	console.log(ACTIONS)
+	console.log(action.type)
+	console.log(ACTIONS[action.type])
+	console.log('processAction')
+	return ACTIONS[action.type](state, action)
+}
+
 export default Map = (state = {}, action) => {
 // export default Map = (state, action) => {
+	if(!action || !action.type) return state
 
-	console.log('state')
-	console.log(state)
-	console.log('state')
-
-	console.log('action')
-	console.log(action)
-	console.log('action')
-
-	switch (action.type) {
-		case StorageConstants.SET_MAP_SIZE:
-			// state = state.set('mapSize', 10)
-			// break
-
-			return [
-				...state,
-				{
-					mapSize: 10
-				}
-			]
-
-		default:
-			return state
-	}
+	return processAction(state, action)
 }
 // })
 
