@@ -7,9 +7,10 @@
 	"license": "private",
 	"private": true,
 	"scripts": {
-		"build:dev": "./node_modules/.bin/webpack --config webpack.config.js",
+		"preinstall": "source $HOME/.nvm/nvm.sh nvm use",
+		"build:dev": "webpack --config webpack.config.js",
 		"unit": "mocha --require babel-polyfill --compilers js:babel-register ./test/unit/**/*.spec.js",
-		"test": "npm run unit",
+		"test": "yarn run unit",
 		"lint": "./node_modules/.bin/eslint --config ./.eslintrc.js ./src",
 		"yarn:install": "yarn install"
 	},
