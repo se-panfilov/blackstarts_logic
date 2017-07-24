@@ -1,22 +1,10 @@
-const chai = require('chai')
-// import chai from 'chai'
-const expect = chai.expect
-// const sinon = require('sinon')
-
 import Main from '../../src/Main.js'
 
 describe('Main.', () => {
 
-	describe('Main fn.', () => {
-
-		it('Main.', () => {
-			// console.log('Main')
-			Main.init()
-			// console.log('222222')
-			expect(1).to.be.a('number')
-			// main.main()
-		})
-
+	test('Main fn', () => {
+		Main.init()
+		expect(2 + 2).toBe(4)
 	})
 
 })

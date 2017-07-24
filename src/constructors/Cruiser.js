@@ -3,11 +3,13 @@ import MainEngineConfig from '../configs/subsystems/engine/MainEngineConfig.js'
 import LauncherConfig from '../configs/subsystems/weapon/LauncherConfig.js'
 import RailGunConfig from '../configs/subsystems/weapon/RailGunConfig.js'
 import UltaGunConfig from '../configs/subsystems/weapon/RailGunConfig'
+import Immutable from 'immutable'
 
 export default function Cruiser() {
 	const result = {}
 	result.ship = {}
 	//TODO (S.Panfilov) replace with deepcopy and extract in own function(s)
+	// TODO (S.Panfilov) replace instead all objects with immutable
 	Object.assign(result.ship, CruiserTypeConfig)
 	result.engine = {}
 	Object.assign(result.engine, MainEngineConfig)
@@ -19,7 +21,7 @@ export default function Cruiser() {
 	result.weapons[UltaGunConfig.name] = {}
 	Object.assign(result.ship, UltaGunConfig)
 
-	return result
+	return Immutable.fromJS(result)
 }
 
 

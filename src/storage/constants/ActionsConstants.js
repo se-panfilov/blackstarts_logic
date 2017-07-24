@@ -1,0 +1,4 @@
+export default {
+	CREATE_MAP: 'CREATE_MAP',
+	CREATE_CRUISER: 'CREATE_CRUISER'
+}

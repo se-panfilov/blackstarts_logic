@@ -1,8 +1,10 @@
+import Immutable from 'immutable'
+
 export default function Map (width, height) {
-	return { //should be in a storage
+	return new Immutable.Map({ //should be in a storage
 		width: width,
 		height: height
-	}
+	})
 }
 
 //generate tiles map

@@ -1,14 +1,12 @@
 import Immutable from 'immutable'
 import ActionsConstants from '../constants/ActionsConstants'
 import StorageItemsConstants from '../constants/StorageItemsConstants'
-import MapConstructor from '../../constructors/Map.js'
+import Cruiser from '../../constructors/Cruiser.js'
 
 const ACTIONS = {
-	[ActionsConstants.CREATE_MAP] (state, action) {
-		const width = action.data.get('width')
-		const height = action.data.get('height')
-		const data = new MapConstructor(width, height)
-		return state.set(StorageItemsConstants.MAP, data)
+	[ActionsConstants.CREATE_CRUISER] (state, action) {
+		const data = new Cruiser(action.data)
+		return state.set(StorageItemsConstants.CRUISER, data)
 	}
 }
 

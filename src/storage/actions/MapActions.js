@@ -1,9 +1,9 @@
 import Immutable from 'immutable'
-import StorageConstants from '../constants/StorageConstants.js'
+import ActionsConstants from '../constants/ActionsConstants.js'
 
 // export const Immutable.Map({
 export const setMapSize = ({height, width}) => ({
-	type: StorageConstants.SET_MAP_SIZE,
+	type: ActionsConstants.SET_MAP_SIZE,
 	height: height,
 	width: width
 })

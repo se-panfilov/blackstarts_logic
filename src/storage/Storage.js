@@ -9,15 +9,15 @@ export default {
 	init (initialData = {}) {
 		initialData = Immutable.fromJS(initialData)
 
-		const enhancer = compose(
-			applyMiddleware(
-				// thunkMiddleware
-			)//,
-			// DevTools.instrument()
-		)
+		// const enhancer = compose(
+		// 	applyMiddleware(
+//				// thunkMiddleware
+// 			)//,
+		//	// DevTools.instrument()
+		// )
 
-		return createStore(Reducers, initialData, enhancer)
-		// return createStore(Reducers, initialData)
+		// return createStore(Reducers, initialData, enhancer)
+		return createStore(Reducers, initialData)
 	},
 	setStorage (storage) {
 		this.storage = storage
