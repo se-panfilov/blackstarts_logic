@@ -12,7 +12,11 @@
 		"unit": "jest",
 		"test": "yarn run unit",
 		"lint": "./node_modules/.bin/eslint --config ./.eslintrc.js ./src",
-		"yarn:install": "yarn install"
+		"yarn:install": "yarn install",
+		"flow": "flow",
+		"flow:status": "flow status",
+		"flow:server": "flow server",
+		"flow:stop": "flow stop"
 	},
 	"dependencies": {
 		"immutable": "^3.8.1",
@@ -20,6 +24,7 @@
 		"redux-immutablejs": "^0.0.8"
 	},
 	"devDependencies": {
+		"babel-cli": "^6.24.1",
 		"babel-core": "^6.25.0",
 		"babel-eslint": "^7.2.3",
 		"babel-jest": "^20.0.3",
@@ -28,6 +33,7 @@
 		"babel-polyfill": "^6.23.0",
 		"babel-preset-env": "^1.5.2",
 		"babel-preset-es2015": "^6.24.1",
+		"babel-preset-flow": "^6.23.0",
 		"babel-preset-stage-2": "^6.24.1",
 		"babel-register": "^6.24.1",
 		"eslint": "^4.0.0",
@@ -36,6 +42,7 @@
 		"eslint-plugin-node": "^5.0.0",
 		"eslint-plugin-promise": "^3.5.0",
 		"eslint-plugin-standard": "^3.0.1",
+		"flow-bin": "^0.51.0",
 		"jest": "^20.0.4",
 		"regenerator-runtime": "^0.10.5",
 		"webpack": "^3.0.0"
