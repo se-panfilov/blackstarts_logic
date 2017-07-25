@@ -6,8 +6,9 @@ import WeaponFireRange from '../../../constants/weapon/WeaponFireRange.json'
 import WeaponFireAccuracy from '../../../constants/weapon/WeaponFireAccuracy.json'
 import AmmoUsage from '../../../constants/AmmoUsage.json'
 import SubSystem from '../../../constants/SubSystem.json'
+import Immutable from 'immutable'
 
-export default {
+export default Immutable.fromJS({
 	name: 'UltaGun',
 	subsystemType: SubSystem.WEAPON,
 	kind: WeaponKind.BEAM,
@@ -27,4 +28,4 @@ export default {
 	//ammoSpeed
 	//canBePlacedTo: [major, minor]
 	//
-}
+})
