@@ -5,7 +5,7 @@ import Immutable from 'immutable'
 // }
 
 export default {
-	processAction (actionsList: Object, state = new Immutable.Map(), action: Immutable.Map) {
+	processAction (actionsList: Object, state = new Immutable.Map(), action: Immutable.Map): Immutable.Map {
 		// if (!actionsList || !action.type || !actionsList[action.type]) throw new Error(MESSAGE.UNKNOWN_ACTION_TYPE)
 		if (!actionsList) return state
 		if (!action) return state
