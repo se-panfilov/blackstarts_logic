@@ -7,7 +7,7 @@ export default {
 		const store = StorageInitializer.init()
 		const width = 100
 		const height = 200
-		// store.dispatch({type: ActionsConstants.CREATE_MAP, data: new Immutable.Map({width, height})})
+		store.dispatch({type: ActionsConstants.CREATE_MAP, data: new Immutable.Map({width, height})})
 		store.dispatch({type: ActionsConstants.CREATE_CRUISER, data: new Immutable.Map()})
 		console.log(store.getState())
 

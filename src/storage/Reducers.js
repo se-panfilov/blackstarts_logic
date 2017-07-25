@@ -1,6 +1,6 @@
 import {combineReducers} from 'redux-immutablejs'
-import MapReducers from './reducers/MapReducers.js'
-import CruiserReducers from './reducers/CruiserReducers.js'
+import MapReducers from './reducers/map/MapReducers'
+import CruiserReducers from './reducers/cruiser/CruiserReducers'
 
 export default combineReducers({
 	MapReducers,
