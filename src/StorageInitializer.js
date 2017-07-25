@@ -1,3 +1,4 @@
+// @flow
 import Storage from './storage/Storage.js'
 
 export default {

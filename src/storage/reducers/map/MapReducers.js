@@ -1,9 +1,11 @@
+// @flow
+
 import Immutable from 'immutable'
-import StorageUtils from '../../StorageUtils'
+import {processAction} from '../../StorageUtils'
 import MapActions from './MapActions'
 
-export default function (state = new Immutable.Map(), action): Immutable.Map {
+export default function (state: Immutable.Map = new Immutable.Map(), action: Object): Immutable.Map {
 	if (!action || !action.type) return state
 	action = Immutable.fromJS(action)
-	return StorageUtils.processAction(MapActions, state, action)
+	return processAction(MapActions, state, action)
 }

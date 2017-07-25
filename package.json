@@ -13,7 +13,9 @@
 		"test": "yarn run unit",
 		"lint": "./node_modules/.bin/eslint --config ./.eslintrc.js ./src",
 		"yarn:install": "yarn install",
+		"flow:init": "flow init",
 		"flow": "flow",
+		"flow:start": "flow start",
 		"flow:status": "flow status",
 		"flow:server": "flow server",
 		"flow:stop": "flow stop"

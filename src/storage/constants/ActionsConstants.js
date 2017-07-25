@@ -1,4 +1,3 @@
-export default {
-	CREATE_MAP: 'CREATE_MAP',
-	CREATE_CRUISER: 'CREATE_CRUISER'
-}
+// @flow
+export const CREATE_MAP: string = 'CREATE_MAP'
+export const CREATE_CRUISER: string = 'CREATE_CRUISER'

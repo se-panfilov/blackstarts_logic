@@ -7,12 +7,13 @@ module.exports = {
 		sourceType: 'module'
 	},
 	env: {
-		browser: false
+		browser: false,
+		jest: true
 	},
 	// https://github.com/feross/standard/blob/master/RULES.md#javascript-standard-style
 	extends: 'standard',
 	// required to lint *.vue files
-	plugins: [],
+	plugins: ["flowtype"],
 	// add your custom rules here
 	'rules': {
 		// allow paren-less arrow functions
