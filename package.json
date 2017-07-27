@@ -10,6 +10,7 @@
 		"preinstall": "source $HOME/.nvm/nvm.sh nvm use",
 		"build:dev": "webpack --config webpack.config.js",
 		"unit": "jest",
+		"update": "ncu -a && yarn install",
 		"test": "yarn run unit",
 		"lint": "./node_modules/.bin/eslint --config ./.eslintrc.js ./src",
 		"flow:init": "flow init",
