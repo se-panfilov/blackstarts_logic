@@ -1,5 +1,5 @@
 export default AmmoType = {
-	BEAM: 'BEAM',
-	KINETIC: 'KINETIC',
-	MISSILE: 'MISSILE'
+  BEAM: 'BEAM',
+  KINETIC: 'KINETIC',
+  MISSILE: 'MISSILE'
 }

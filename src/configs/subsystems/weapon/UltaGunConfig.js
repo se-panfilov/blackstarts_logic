@@ -9,23 +9,23 @@ import SubSystem from '../../../constants/SubSystem.json'
 import Immutable from 'immutable'
 
 export default Immutable.fromJS({
-	name: 'UltaGun',
-	subsystemType: SubSystem.WEAPON,
-	kind: WeaponKind.BEAM,
-	type: WeaponType.COURSE_GUN,
-	fire: {
-		speed: WeaponFireSpeed.EXTRA_FAST,
-		coolDown: WeaponFireCoolDown.EXTRA_SLOW, //example -function correct(WeaponCoolDown.EXTRA_SLOW, 1245)
-		range: WeaponFireRange.EXTRA_LONG,
-		accuracy: WeaponFireAccuracy.EXTRA_HIGHT
-	},
-	ammo: {
-		usagePerShot: AmmoUsage.SINGLE
-	}
+  name: 'UltaGun',
+  subsystemType: SubSystem.WEAPON,
+  kind: WeaponKind.BEAM,
+  type: WeaponType.COURSE_GUN,
+  fire: {
+    speed: WeaponFireSpeed.EXTRA_FAST,
+    coolDown: WeaponFireCoolDown.EXTRA_SLOW, // example -function correct(WeaponCoolDown.EXTRA_SLOW, 1245)
+    range: WeaponFireRange.EXTRA_LONG,
+    accuracy: WeaponFireAccuracy.EXTRA_HIGHT
+  },
+  ammo: {
+    usagePerShot: AmmoUsage.SINGLE
+  }
 
-	//requirements (space, energy, manpower, intel)
-	//usage: (man, intel, energy)
-	//ammoSpeed
-	//canBePlacedTo: [major, minor]
-	//
+  //requirements (space, energy, manpower, intel)
+  //usage: (man, intel, energy)
+  //ammoSpeed
+  //canBePlacedTo: [major, minor]
+  //
 })

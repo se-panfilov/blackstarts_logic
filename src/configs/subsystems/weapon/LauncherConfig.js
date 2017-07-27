@@ -9,17 +9,17 @@ import SubSystem from '../../../constants/SubSystem.json'
 import Immutable from 'immutable'
 
 export default Immutable.fromJS({
-	name: 'Launcher',
-	subsystemType: SubSystem.WEAPON,
-	kind: WeaponKind.MISSILE,
-	type: WeaponType.ONBOARD_GUN,
-	fire: {
-		speed: WeaponFireSpeed.SLOW,
-		coolDown: WeaponFireCoolDown.SLOW, //example -function correct(WeaponCoolDown.EXTRA_SLOW, 1245)
-		range: WeaponFireRange.EXTRA_LONG,
-		accuracy: WeaponFireAccuracy.NORMAL
-	},
-	ammo: {
-		usagePerShot: AmmoUsage.SINGLE
-	}
+  name: 'Launcher',
+  subsystemType: SubSystem.WEAPON,
+  kind: WeaponKind.MISSILE,
+  type: WeaponType.ONBOARD_GUN,
+  fire: {
+    speed: WeaponFireSpeed.SLOW,
+    coolDown: WeaponFireCoolDown.SLOW, // example -function correct(WeaponCoolDown.EXTRA_SLOW, 1245)
+    range: WeaponFireRange.EXTRA_LONG,
+    accuracy: WeaponFireAccuracy.NORMAL
+  },
+  ammo: {
+    usagePerShot: AmmoUsage.SINGLE
+  }
 })

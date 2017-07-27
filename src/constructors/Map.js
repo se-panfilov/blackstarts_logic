@@ -1,15 +1,15 @@
 import Immutable from 'immutable'
 
 export default function Map (width, height) {
-	return new Immutable.Map({ //should be in a storage
-		width: width,
-		height: height
-	})
+  return new Immutable.Map({ //should be in a storage
+    width: width,
+    height: height
+  })
 }
 
 //generate tiles map
 
-//TODO (S.Panfilov) check if ES6 classes would fit better
+// TODO (S.Panfilov) check if ES6 classes would fit better
 // class Parent {
 // 	constructor() {
 // 		console.log(new.target)

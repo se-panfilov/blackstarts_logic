@@ -5,10 +5,10 @@ import MinorShipFuelLodout from '../../../constants/ship/minor/MinorShipFuelLodo
 import MinorShipAmmoLodout from '../../../constants/ship/minor/MinorShipAmmoLodout.json'
 
 export default {
-	name: MinorShipType.BOMBER,
-	size: MinorShipSize.NORMAL,
-	type: MinorShipType.BOMBER,
-	mobility: MinorShipMobility.EXTRA_LOW,
-	fuel: MinorShipFuelLodout.HIGH,
-	lodout: MinorShipAmmoLodout.EXTRA_HIGH
+  name: MinorShipType.BOMBER,
+  size: MinorShipSize.NORMAL,
+  type: MinorShipType.BOMBER,
+  mobility: MinorShipMobility.EXTRA_LOW,
+  fuel: MinorShipFuelLodout.HIGH,
+  lodout: MinorShipAmmoLodout.EXTRA_HIGH
 }
