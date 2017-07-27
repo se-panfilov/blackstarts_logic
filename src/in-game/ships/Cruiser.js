@@ -1,6 +1,6 @@
 import ShipType from './constants/ShipType.js'
 
-export default Cruiser = {
+export default {
   type: ShipType.CRUISER,
   init () {
 

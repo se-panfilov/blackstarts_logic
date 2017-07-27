@@ -9,9 +9,9 @@ export default function Map (width, height) {
 
 //generate tiles map
 
-// TODO (S.Panfilov) check if ES6 classes would fit better
+//TODO (S.Panfilov) check if ES6 classes would fit better
 // class Parent {
-// 	constructor() {
-// 		console.log(new.target)
-// 	}
+//   constructor() {
+//    console.log(new.target)
+//  }
 // }

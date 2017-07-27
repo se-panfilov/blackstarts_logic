@@ -1,5 +1,5 @@
 import AmmoType from './constants/AmmoType.js'
 
-export default RailGun = {
+export default {
   ammoType: AmmoType.KINETIC
 }

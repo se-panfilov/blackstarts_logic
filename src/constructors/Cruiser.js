@@ -2,7 +2,7 @@ import CruiserTypeConfig from '../configs/ship_type/major/CruiserTypeConfig.js'
 import MainEngineConfig from '../configs/subsystems/engine/MainEngineConfig.js'
 import LauncherConfig from '../configs/subsystems/weapon/LauncherConfig.js'
 import RailGunConfig from '../configs/subsystems/weapon/RailGunConfig.js'
-import UltaGunConfig from '../configs/subsystems/weapon/RailGunConfig'
+import UltaGunConfig from '../configs/subsystems/weapon/UltaGunConfig.js'
 import Immutable from 'immutable'
 
 function set (obj, fileld, config) {
@@ -48,7 +48,7 @@ export default function Cruiser () {
 
 //TODO (S.Panfilov) check if ES6 classes would fit better
 // class Parent {
-// 	constructor() {
-// 		console.log(new.target)
-// 	}
+//  constructor() {
+//    console.log(new.target)
+//  }
 // }

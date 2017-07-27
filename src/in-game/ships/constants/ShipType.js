@@ -1,3 +1,3 @@
-export default ShipsConstants = {
+export default {
   CRUISER: 'CRUISER'
 }

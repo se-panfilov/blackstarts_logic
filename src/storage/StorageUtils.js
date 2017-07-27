@@ -2,7 +2,7 @@
 import Immutable from 'immutable'
 
 // const MESSAGE = {
-// 	UNKNOWN_ACTION_TYPE: 'UNKNOWN_ACTION_TYPE'
+//  UNKNOWN_ACTION_TYPE: 'UNKNOWN_ACTION_TYPE'
 // }
 
 export function processAction (actionsList: Object, state: Immutable.Map = new Immutable.Map(), action: Immutable.Map): Immutable.Map {

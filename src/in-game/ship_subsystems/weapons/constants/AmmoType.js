@@ -1,4 +1,4 @@
-export default AmmoType = {
+export default {
   BEAM: 'BEAM',
   KINETIC: 'KINETIC',
   MISSILE: 'MISSILE'
