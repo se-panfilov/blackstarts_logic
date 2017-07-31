@@ -1,17 +1,19 @@
 // @flow
 
 import Immutable from 'immutable'
-import StorageInitializer from './StorageInitializer.js'
-import {CREATE_CRUISER, CREATE_MAP} from './storage/constants/ActionsConstants.js'
+import StorageInitializer from './StorageInitializer'
+import {CREATE_CRUISER} from './storage/constants/ActionsConstants'
+import Map from './creators/Map'
+import Cruiser from './creators/Cruiser'
 
 export default {
   init () {
-    const store = StorageInitializer.init()
+    const Storage = StorageInitializer()
     const width = 100
     const height = 200
-    store.dispatch({type: CREATE_MAP, data: new Immutable.Map({width, height})})
-    store.dispatch({type: CREATE_CRUISER, data: new Immutable.Map()})
-    console.log(store.getState())
+    Map(width, height)
+    Cruiser()
+    console.log(Storage.getState())
 
     // const map = new Map(width, height)
 

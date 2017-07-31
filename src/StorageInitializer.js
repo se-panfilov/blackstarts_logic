@@ -1,10 +1,8 @@
 // @flow
-import Storage from './storage/Storage.js'
+import {initStorage, setStorage} from './storage/Storage.js'
 
-export default {
-  init () {
-    const store = Storage.init()
-    Storage.setStorage(store)
-    return store
-  }
+export default function init () {
+  const store = initStorage()
+  setStorage(store)
+  return store
 }

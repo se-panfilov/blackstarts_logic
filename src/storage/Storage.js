@@ -6,23 +6,23 @@ import Reducers from './Reducers.js'
 // import {applyMiddleware, compose, createStore} from 'redux'
 import {createStore} from 'redux'
 
-export default {
-  storage: null,
-  init (initialData: Object = {}) {
-    initialData = Immutable.fromJS(initialData)
+// TODO (S.Panfilov) fix storage type
+export let Storage: any = null
 
-    // const enhancer = compose(
-    //  applyMiddleware(
-    //      // thunkMiddleware
-    //     )//,
-    //  // DevTools.instrument()
-    // )
+export function initStorage (initialData: Object = {}) {
+  initialData = Immutable.fromJS(initialData)
 
-    // return createStore(Reducers, initialData, enhancer)
-    return createStore(Reducers, initialData)
-  },
-  setStorage (storage: Object) {
-    this.storage = storage
-  }
+  // const enhancer = compose(
+  //  applyMiddleware(
+  //      // thunkMiddleware
+  //     )//,
+  //  // DevTools.instrument()
+  // )
 
+  // return createStore(Reducers, initialData, enhancer)
+  return createStore(Reducers, initialData)
+}
+
+export function setStorage (storage: Object) {
+  Storage = storage
 }
