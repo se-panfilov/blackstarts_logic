@@ -1,8 +1,5 @@
 // @flow
-
-import Immutable from 'immutable'
 import StorageInitializer from './StorageInitializer'
-import {CREATE_CRUISER} from './storage/constants/ActionsConstants'
 import Map from './creators/Map'
 import Cruiser from './creators/Cruiser'
 

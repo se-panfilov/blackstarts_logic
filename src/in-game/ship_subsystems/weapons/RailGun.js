@@ -1,6 +1,6 @@
 // @flow
-import AmmoType from './constants/AmmoType.js'
+import {KINETIC} from './constants/AmmoType'
 
 export default {
-  ammoType: AmmoType.KINETIC
+  ammoType: KINETIC
 }
