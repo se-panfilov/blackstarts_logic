@@ -10,6 +10,7 @@ export default {
     const height = 200
     Map(width, height)
     Cruiser()
+    Cruiser()
     console.log(Storage.getState())
 
     // const map = new Map(width, height)

@@ -39,12 +39,16 @@ function setWeapon (obj: Immutable.Map, config: Immutable.Map) {
 
 export default function Cruiser (data?: Immutable.Map) {
   let result
-  result = data ? data : new Immutable.Map()
+  result = new Immutable.Map()
   result = setShip(result, CruiserTypeConfig)
   result = setEngine(result, MainEngineConfig)
   result = setWeapon(result, LauncherConfig)
   result = setWeapon(result, RailGunConfig)
   result = setWeapon(result, UltaGunConfig)
+
+  // TODO (S.Panfilov)  allow here to ovveride SOME properties
+  // result = result.setIn(['ship', 'name'], 'ASDASDASD')
+  // console.log(result)
 
   return result
 }
