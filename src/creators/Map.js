@@ -1,3 +1,4 @@
+// @flow
 import Immutable from 'immutable'
 import {Storage} from '../storage/Storage'
 import {CREATE_MAP} from '../storage/constants/ActionsConstants'

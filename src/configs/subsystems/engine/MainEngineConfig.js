@@ -1,3 +1,4 @@
+// @flow
 import EngineKind from '../../../constants/engine/EngineKind.json'
 import EngineType from '../../../constants/engine/EngineType.json'
 import EngineSpeed from '../../../constants/engine/EngineSpeed.json'

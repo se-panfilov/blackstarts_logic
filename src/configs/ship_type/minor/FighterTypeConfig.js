@@ -1,3 +1,4 @@
+// @flow
 import MinorShipType from '../../../constants/ship/minor/MinorShipType.json'
 import MinorShipSize from '../../../constants/ship/minor/MinorShipSize.json'
 import MinorShipMobility from '../../../constants/ship/minor/MinorShipMobility.json'

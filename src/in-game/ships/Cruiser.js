@@ -1,3 +1,4 @@
+// @flow
 import ShipType from './constants/ShipType.js'
 
 export default {

@@ -1,3 +1,4 @@
+// @flow
 import WeaponKind from '../../../constants/weapon/WeaponKind.json'
 import WeaponType from '../../../constants/weapon/WeaponType.json'
 import WeaponFireSpeed from '../../../constants/weapon/WeaponFireSpeed.json'

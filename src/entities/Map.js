@@ -1,3 +1,4 @@
+// @flow
 import Immutable from 'immutable'
 
 export default function Map (width: number, height: number) {

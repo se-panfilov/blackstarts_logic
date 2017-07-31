@@ -1,3 +1,4 @@
+// @flow
 import MajorShipType from '../../../constants/ship/major/MajorShipType.json'
 import MajorShipSize from '../../../constants/ship/major/MajorShipSize.json'
 import Immutable from 'immutable'
