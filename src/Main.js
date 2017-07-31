@@ -1,4 +1,5 @@
 // @flow
+import Immutable from 'immutable'
 import StorageInitializer from './StorageInitializer'
 import Map from './creators/Map'
 import Cruiser from './creators/Cruiser'
@@ -10,7 +11,9 @@ export default {
     const height = 200
     Map(width, height)
     Cruiser()
-    Cruiser()
+
+    const cruiserData = Immutable.fromJS({name: 'Targelion'})
+    Cruiser(cruiserData)
     console.log(Storage.getState())
 
     // const map = new Map(width, height)

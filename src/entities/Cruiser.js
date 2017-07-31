@@ -46,7 +46,7 @@ export default function Cruiser (data?: Immutable.Map) {
   result = setWeapon(result, RailGunConfig)
   result = setWeapon(result, UltaGunConfig)
 
-  // TODO (S.Panfilov)  allow here to ovveride SOME properties
+  // TODO (S.Panfilov)  allow here to ovveride SOME properties curWorkPoint
   // result = result.setIn(['ship', 'name'], 'ASDASDASD')
   // console.log(result)
 
